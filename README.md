@@ -13,7 +13,7 @@ It demonstrates clean architecture, modular routing, Alembic migrations, passwor
 
 ## Project Preview
 
-> _Add your API demo screenshot or OpenAPI docs preview here._
+> _Add API demo screenshot or OpenAPI docs preview here._
 
 ![FastAPI Swagger UI](https://fastapi.tiangolo.com/img/index/index-01-swagger-ui-simple.png)
 
