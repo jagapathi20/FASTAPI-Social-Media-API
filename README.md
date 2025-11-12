@@ -1,4 +1,4 @@
-# 🧠 FastAPI Social Media API
+# FastAPI Social Media API
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.121.0-009688.svg)](https://fastapi.tiangolo.com/)
@@ -11,7 +11,7 @@ It demonstrates clean architecture, modular routing, Alembic migrations, passwor
 
 ---
 
-## 🖼️ Project Preview
+## Project Preview
 
 > _Add your API demo screenshot or OpenAPI docs preview here._
 
@@ -19,35 +19,35 @@ It demonstrates clean architecture, modular routing, Alembic migrations, passwor
 
 ---
 
-## 🚀 Features
+## Features
 
-✅ **User Authentication**
+**User Authentication**
 - JWT-based login system  
 - Password hashing with `passlib`  
 - Token verification & protected routes  
 
-✅ **Post Management**
+**Post Management**
 - Create, Read, Update, Delete (CRUD) operations  
 - Ownership checks (only authors can modify/delete)  
 - Pagination & search support  
 
-✅ **Voting System**
+**Voting System**
 - Upvote / downvote functionality  
 - Prevents duplicate votes  
 
-✅ **Database & ORM**
+**Database & ORM**
 - PostgreSQL + SQLAlchemy ORM  
 - Alembic for migrations  
 - Pydantic models for validation  
 
-✅ **Testing**
+**Testing**
 - Pytest with isolated test database  
 - Fixtures for posts, users, and auth  
 - CI-ready test configuration  
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 app/
@@ -82,27 +82,27 @@ app/
 
 ---
 
-## ⚙️ Installation
+## Installation
 
-### 1️⃣ Clone the repository
+### Clone the repository
 ```bash
 git clone https://github.com/<your-username>/fastapi-social-media.git
 cd fastapi-social-media
 ```
 
-### 2️⃣ Create a virtual environment
+### Create a virtual environment
 ```bash
 python -m venv venv
 source venv/bin/activate     # Linux / macOS
 venv\Scripts\activate        # Windows
 ```
 
-### 3️⃣ Install dependencies
+### Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4️⃣ Set up environment variables  
+### Set up environment variables  
 Create a `.env` file in the project root:
 
 ```env
@@ -116,23 +116,23 @@ algorithm=HS256
 access_token_expire_minutes=30
 ```
 
-### 5️⃣ Run Alembic migrations
+### Run Alembic migrations
 ```bash
 alembic upgrade head
 ```
 
-### 6️⃣ Start the development server
+### Start the development server
 ```bash
 uvicorn app.main:app --reload
 ```
 
-Server runs at 👉 **http://127.0.0.1:8000**
+Server runs at **http://127.0.0.1:8000**
 
-Swagger docs at 👉 **http://127.0.0.1:8000/docs**
+Swagger docs at **http://127.0.0.1:8000/docs**
 
 ---
 
-## 🧪 Running Tests
+## Running Tests
 
 ```bash
 pytest -v
@@ -140,20 +140,20 @@ pytest -v
 
 ---
 
-## 📚 API Endpoints Overview
+## API Endpoints Overview
 
-### 🔑 Authentication
+### Authentication
 | Method | Endpoint | Description |
 |--------|-----------|-------------|
 | POST | `/login` | User login, returns access token |
 
-### 👤 Users
+###  Users
 | Method | Endpoint | Description |
 |--------|-----------|-------------|
 | POST | `/users/` | Create a new user |
 | GET | `/users/{id}` | Retrieve a user by ID |
 
-### 📝 Posts
+### Posts
 | Method | Endpoint | Description |
 |--------|-----------|-------------|
 | GET | `/posts/` | List all posts |
@@ -162,14 +162,14 @@ pytest -v
 | PUT | `/posts/{id}` | Update an existing post |
 | DELETE | `/posts/{id}` | Delete a post |
 
-### 👍 Votes
+### Votes
 | Method | Endpoint | Description |
 |--------|-----------|-------------|
 | POST | `/vote/` | Cast or remove a vote on a post |
 
 ---
 
-## 🐳 Docker (Optional)
+## Docker (Optional)
 
 ### Development mode
 ```bash
@@ -183,7 +183,7 @@ docker compose -f docker-compose-prod.yml up --build -d
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |-------|-------------|
@@ -196,15 +196,3 @@ docker compose -f docker-compose-prod.yml up --build -d
 | **Containerization** | Docker, Docker Compose |
 
 ---
-
-## 🧑‍💻 Author
-
-**Jagapathi Mallepula**  
-📫 [Your LinkedIn or Email Here]  
-⭐ If you find this project helpful, consider giving it a **star** on GitHub!
-
----
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE) — feel free to use, modify, and share!
